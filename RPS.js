@@ -1,44 +1,54 @@
 /* COMPUTER SELECTION */
 
-const rps = ["rock", "paper", "scissors"];
+
 
 function computerPlay(arr) {
-    console.log(arr[Math.floor(Math.random() * arr.length)]);
+    return arr[Math.floor(Math.random() * arr.length)];
 }
 
-const playerSelection = "rock";
-const computerSelection = (computerPlay(rps));
+const rps = ["rock", "paper", "scissors"];
+
 
 function playRound(playerSelection, computerSelection) {
-    if (computerSelection === "rock") {
-        if (playerSelection.toLowerCase() === "paper") {
-            console.log("You win!");
+    if (playerSelection.toLowerCase() === "rock") {
+        if (computerSelection === "paper") {
+            return "You lose.";
         }
-        else if (playerSelection.toLowerCase() === "scissors") {
-            console.log("You lose.");
+        else if (computerSelection === "scissors") {
+            return "You win!";
         }
-        else console.log("Invalid input");
     }
-    if (computerSelection === "paper") {
-        if (playerSelection.toLowerCase() === "scissors") {
-            console.log("You win!");
+    if (playerSelection.toLowerCase() === "paper") {
+        if (computerSelection === "rock") {
+            return "You win!";
         }
-        else if (playerSelection.toLowerCase() === "rock") {
-            console.log("You lose.");
+        else if (computerSelection === "scissors") {
+            return "You lose.";
         }
-        else console.log("Invalid input");
     }
-    if (computerSelection === "scissors") {
-        if (playerSelection.toLowerCase() === "rock") {
-            console.log("You win!");
+    if (playerSelection.toLowerCase() === "scissors") {
+        if (computerSelection === "rock") {
+            return "You lose.";
         }
-        else if (playerSelection.toLowerCase() === "paper") {
-            console.log("You lose");
+        else if (computerSelection === "paper") {
+            return "You win!";
         }
-        else console.log("Invalid input");
     }
-
+    if (playerSelection.toLowerCase() === computerSelection) {
+        return "Tie game!";
+    }
+    if (playerSelection.toLowerCase() != ("rock" || "paper" || "scissors")) {
+        return "Invalid input";
+    }
 
 }
 
-console.log(playRound("paper", computerSelection));
+const playerSelection = window.prompt("Make your selection:");
+const computerSelection = (computerPlay(rps));
+
+console.log(playRound(playerSelection, computerSelection));
+
+
+
+
+
