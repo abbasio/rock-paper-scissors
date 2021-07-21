@@ -55,6 +55,8 @@ function playRound(playerSelection, computerSelection) {
 
 /* LOOP */
 
+function game() {
+
 for (let i = 0; i < 5; i++) {
     let computerSelection = (computerPlay(rps));
     let playerSelection = window.prompt("Choose Rock, Paper, or Scissors:");
@@ -64,6 +66,10 @@ for (let i = 0; i < 5; i++) {
         document.getElementById("score").innerHTML = `Complete! Final score - Player: ${playerScore / 2}, Computer: ${computerScore / 2}. Refresh the page to play again.`
     }
 }
+
+}
+
+
 
 
 

@@ -13,3 +13,30 @@ p {
     display: flex;
     justify-content: center;
 }
+
+.play {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.button {
+    padding: 14px 40px;
+    border-radius: 8px;
+    background-color: gainsboro;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+footer {
+    background-color: #F2F2F2; 
+    position: fixed;
+    bottom: 5px;
+    width: 100vw;
+    text-align: center;
+    
+}
+
+
