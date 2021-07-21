@@ -61,7 +61,7 @@ for (let i = 0; i < 5; i++) {
     let computerSelection = (computerPlay(rps));
     let playerSelection = window.prompt("Choose Rock, Paper, or Scissors:");
     let roundResult = (playRound(playerSelection, computerSelection));
-    document.getElementById("game").innerHTML = roundResult;
+    alert(roundResult);
 
     if (i == 4) {
         document.getElementById("score").innerHTML = `Complete! Final score - Player: ${playerScore}, Computer: ${computerScore}. Refresh the page to play again.`
