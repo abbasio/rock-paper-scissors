@@ -20,13 +20,13 @@ p {
    
 }
 
-.button {
+#Button {
     padding: 14px 40px;
     border-radius: 8px;
     background-color: gainsboro;
 }
 
-.button:hover {
+#Button:hover {
     box-shadow: 0 0 10px 0 gainsboro;
 }
 
