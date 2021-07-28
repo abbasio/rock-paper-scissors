@@ -13,25 +13,30 @@ p {
     align-items: center;
 }
 
+
+.scoreLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .play {
     display: flex;
     justify-content: center;
    
 }
 
-input:hover {
+input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input:hover:enabled {
     transform: scale(1.1);
     box-shadow: 0 0 10px 0 black;
-}
-
-#Button {
-    padding: 14px 40px;
-    border-radius: 8px;
-    background-color: gainsboro;
-}
-
-#Button:hover {
-    box-shadow: 0 0 10px 0 gainsboro;
+    cursor: pointer;
 }
 
 #game {
