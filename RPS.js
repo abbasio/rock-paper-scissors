@@ -12,6 +12,17 @@ const rps = ["rock", "paper", "scissors"];
 let playerScore = 0;
 let computerScore = 0;
 
+//function start() {
+   // const playGame = document.querySelector('#game');
+   // const button1 = document.createElement('button');
+    //const button2 = document.createElement('button');
+    //const button3 = document.createElement('button');
+    
+    //playGame.appendChild(button1);
+    //playGame.appendChild(button2);
+   // playGame.appendChild(button3);w
+//}
+
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === "rock") {
@@ -64,7 +75,7 @@ for (let i = 0; i < 5; i++) {
     alert(roundResult);
 
     if (i == 4) {
-        document.getElementById("score").innerHTML = `Complete! Final score - Player: ${playerScore}, Computer: ${computerScore}. Refresh the page to play again.`
+        document.getElementById("score").textContent = `Complete! Final score - Player: ${playerScore}, Computer: ${computerScore}. Refresh the page to play again.`
         document.getElementById("Button").disabled = true;
     }
 }
