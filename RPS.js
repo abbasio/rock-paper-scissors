@@ -31,11 +31,9 @@ function restart(parent) {
     }
 }
 
-
 //---------GAME
 
 function playRound(playerSelection, computerSelection) {
-
 
     const score = document.querySelector('#score');
     const updateScore = document.createElement('div');
@@ -114,8 +112,6 @@ function playRound(playerSelection, computerSelection) {
             score.appendChild(finalScore);
         }
         
-        
-
     }
    
 }

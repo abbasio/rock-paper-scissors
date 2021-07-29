@@ -1,18 +1,19 @@
-h1, h2 {
+h1, h2, p {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 body {
     background-color: gainsboro;
 }
 
-p {
+#game {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content:center;
+    gap: 50px;
 }
-
 
 .scoreLine {
     display: flex;
@@ -20,12 +21,6 @@ p {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.play {
-    display: flex;
-    justify-content: center;
-   
 }
 
 input {
@@ -39,20 +34,29 @@ input:hover:enabled {
     cursor: pointer;
 }
 
-#game {
+footer {
+    background-color: grey;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
     display: flex;
     align-items: center;
-    justify-content:center;
-    gap: 50px;
+    justify-content: center;
+    width: 100%;
+    
 }
 
-footer {
-    background-color: #F2F2F2; 
-    position: fixed;
-    bottom: 5px;
-    width: 100vw;
-    text-align: center;
-    
+#github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#github:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 0 white;
+    border-radius: 50%;
 }
 
 
